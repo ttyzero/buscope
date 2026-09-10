@@ -1,0 +1,5 @@
+/buscope
+/dist
+*.exe
+*.test
+*.out
