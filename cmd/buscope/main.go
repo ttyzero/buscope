@@ -17,7 +17,7 @@ var version = "dev"
 func main() {
 	fs := flag.NewFlagSet("buscope", flag.ContinueOnError)
 	fs.SetOutput(os.Stderr)
-	themeFlag := fs.String("theme", "", "auto|dark|light (TTYTHEME, then CLITHEME)")
+	themeFlag := fs.String("theme", "", "auto|dark|light|nord|… (TTYTHEME, then CLITHEME)")
 	borderless := fs.Bool("borderless", false, "no rounded frame (TTYBORDERLESS=1)")
 	socket := fs.String("socket", "", "ttybus socket path")
 	bus := fs.String("bus", "", "named ttybus")
@@ -38,6 +38,7 @@ Flags:
 		fmt.Fprintf(os.Stderr, `
 Theme (all companion panes honor this):
   --theme, $TTYTHEME, $CLITHEME, then OSC 11 / $COLORFGBG
+  Values: auto, dark, light, or a palette (nord, catppuccin, …)
   --borderless / $TTYBORDERLESS=1  no rounded frame
 
 Keys:

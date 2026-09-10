@@ -66,6 +66,7 @@ Honors the same stack as gitwing:
 Live, on the bus (all three panes):
 
 ```sh
-ttybus pub theme 'THEME dark'
+ttybus pub theme 'THEME nord'
+ttybus pub theme 'THEME catppuccin BORDERS=0'
 ttybus pub theme 'BORDERS=0'
 ```

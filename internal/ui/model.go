@@ -91,7 +91,7 @@ func New(opts Options) model {
 	tp.Ensure(theme.Channel)
 	return model{
 		spec:       opts.Theme,
-		pal:        theme.New(opts.Theme.InitialDark()),
+		pal:        theme.For(opts.Theme),
 		borderless: opts.Borderless,
 		width:      48,
 		height:     24,
@@ -114,7 +114,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.BackgroundColorMsg:
 		m.spec = m.spec.ApplyOSC(msg.IsDark())
-		m.pal = theme.New(m.spec.Polarity != "light")
+		m.pal = theme.For(m.spec)
 		return m, nil
 
 	case tea.WindowSizeMsg:
