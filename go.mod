@@ -6,7 +6,7 @@ require (
 	charm.land/bubbletea/v2 v2.0.9
 	charm.land/lipgloss/v2 v2.0.6
 	github.com/mattn/go-runewidth v0.0.29
-	github.com/ttyzero/commons v0.0.0-20260910064911-fe5479670821
+	github.com/ttyzero/commons v0.0.0-20260910073028-7c54a6474d9b
 	github.com/ttyzero/ttybus v0.0.0-20260910055109-8ddb70f496b8
 )
 

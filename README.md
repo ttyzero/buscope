@@ -69,7 +69,7 @@ Keys: `j`/`k` select channel, `i` then type to publish, `enter` send,
 Honors the same stack as gitwing:
 
 ```
---theme  >  $TTYTHEME  >  $CLITHEME  >  OSC 11  >  $COLORFGBG  >  dark
+--theme  >  $TTYTHEME  >  $CLITHEME  >  ~/.config/ttyzero/theme  >  OSC 11  >  $COLORFGBG  >  dark
 --borderless / $TTYBORDERLESS=1
 ```
 

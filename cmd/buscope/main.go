@@ -37,7 +37,7 @@ Flags:
 		fs.PrintDefaults()
 		fmt.Fprintf(os.Stderr, `
 Theme (all companion panes honor this):
-  --theme, $TTYTHEME, $CLITHEME, then OSC 11 / $COLORFGBG
+  --theme, $TTYTHEME, $CLITHEME, ~/.config/ttyzero/theme, then OSC 11 / $COLORFGBG
   Values: auto, dark, light, or a palette (nord, catppuccin, …)
   --borderless / $TTYBORDERLESS=1  no rounded frame
 
