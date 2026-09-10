@@ -30,7 +30,17 @@ log underneath.
 
 ## Install
 
-Go 1.25+. `ttybus` on `PATH` (auto-starts the daemon).
+```sh
+curl -fsSL https://raw.githubusercontent.com/ttyzero/buscope/main/install.sh | sh
+```
+
+Whole kit after ttybus:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/ttyzero/ttybus/main/install-kit.sh | sh
+```
+
+Installs to `~/.local/bin`. From source: Go 1.25+, `ttybus` on `PATH` (auto-starts the daemon).
 
 ```sh
 cd ~/code/buscope
